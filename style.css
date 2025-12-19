@@ -1,0 +1,184 @@
+body
+{
+    background: #bde4d9;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 100px;
+    color: #008566;
+}
+
+h2
+{
+    margin-top: 5px;
+    color: #008566;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+h3
+{
+    margin-top: 5px;
+    color: #008566;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+a
+{
+    text-align: left;
+    margin-top: 10px;
+    color: #003f30;
+}
+
+p
+{
+    text-align: left;
+    margin-top: 10px;
+    color: #003f30;
+}
+
+#presentation img
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#competences img
+{
+    margin: auto;
+    width: 70%;
+}
+
+img
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#conteneur01
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#conteneur02
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#conteneur03
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#presentation
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#competences
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#veille
+{
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 8px 8px 20px #28cc7f;
+    background: #8f9c98;
+}
+
+#conteneur01 div
+{
+  padding: 5px 0;
+}
+
+#presentation div
+{
+  padding: 5px 0;
+}
+
+#competences div
+{
+  padding: 5px 0;
+}
+
+label
+{
+    display: inline-block;
+    width: 100px;
+}
+
+header {
+    background-color: #86cab7;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+header ul li {
+    display: inline;
+    margin: 0.5rem;
+}

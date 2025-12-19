@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Portfolio - Accueil</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <header>
+            <?php include_once 'header.inc.php'; ?>
+        </header>
+        <h1>Présentation de mes Projets</h1>
+        <div id="conteneur01">
+            <h2>Projet du Stage de Première Année : </h2>
+            <div>
+                <a>Durant mon stage de Première Année, on m'a donné 4 semaines pour ajouter une section Signataire pour gérer les signatures sur les documents PDF générés sur la version Web SAAS de leur logiciel.</a>
+            </div>
+            <div>
+                <a>Pendant ces 4 semaines, j'ai participé aux différentes réunions d'ouverture et de fermetures de sprint où les tickets distribués/validés. Les différents intervenants étaient mon maître de stage, le scrum master et le directeur commercial. Le Livrable était le code qui permettait de régler le ticket attribué et il était envoyé et fusionné sur Github.</a>
+            </div>
+            <div>
+                <a>J'ai d'abord commencé par faire un schéma de ce à quoi l'onglet Signataire ressemblerai. Ensuite, avec l'aide de mon maître de stage, j'ai participé et finalisé la création des SPECS. Ensuite, j'ai codé le front pour faire le faire apparaître sur le logiciel. Voici quelques images :</a>
+            </div>
+            <div>
+                <img src="Images/Front1.png" alt="Première photo du Front : la liste des Signataires existants" width="500">
+            </div>
+            <div>
+                <img src="Images/Front2.png" alt="Deuxième photo du Front : la création d'un signataire" width="500">
+            </div>
+            <div>
+                <img src="Images/Front3.png" alt="Troisième photo du Front : la modification d'un signataire" width="500">
+            </div>
+            <div>
+                <a>Ensuite, avec l'aide de mes collègues, nous avons créé une table Signataire dans la base de donnée avec Prisma. Cela m'a permis de m'attaquer à la partie Back de mon projet (Base de donnée & API) afin de pouvoir créer, modifier et dupliquer mes signataires.</a>
+            </div>
+            <div>
+                <a>Pour finir, j'ai intégré les signataires aux autres parties du logiciel pour pouvoir intégrer les signatures aux documents PDF que le logiciel créé.</a>
+            </div>
+            <div>
+                <img src="Images/pdf.png" alt="La signature et le nom du signataire ajoutée au PDF généré" width="500">
+            </div>
+        </div>
+        <div id="conteneur02">
+            <h2>Projet du Stage de Deuxième Année : </h2>
+            <a>Bientôt...</a>
+        </div>
+        <div id="conteneur03">
+            <h2>Autres Projets : </h2>
+            <h3>Multiburo : </h3>
+            <a>Le but de ce projet était de pouvoir voir les ressources d'un bâtiment fictif pour un jour précis puis de pouvoir en réserver une. "From Scratch", j'ai créé un site en PHP et une base de données HeidiSQL.</a>
+            <img src="Images/multiburo1.png" alt="Image du site Multiburo" width="500">
+            <br>
+            <img src="Images/multiburo2.png" alt="Image du diagramme de classe UML Multiburo" width="500">
+            <h3>Scrabble : </h3>
+            <a>À partir d'une version fonctionnelle en C# du jeu du Scrabble, je l'ai améliorée pour pouvoir jouer à deux joueurs, enregistrer une partie et voir l'historique des parties. J'utilise une API Dictionnaire pour pouvoir vérifier les mots rentrés durant la partie ainsi qu'une base de données HeidiSQL pour stocker l'historique des parties.</a>
+            <img src="Images/scrabble1.png" alt="Image d'accueil de Scrabble" width="500">
+            <br>
+            <img src="Images/scrabble2.png" alt="Image de la partie de Scrabble" width="500">
+            <br>
+            <img src="Images/scrabble3.png" alt="Image du diagramme de classe UML Scrabble" width="300">
+        </div>
+    </body>
+</html>

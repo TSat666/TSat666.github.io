@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Portfolio - Stage</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <header>
+            <?php include_once 'header.inc.php'; ?>
+        </header>
+        <h1>Présentation de mon Stage</h1>
+        <div id="conteneur01">
+            <h2>L'entreprise : </h2>
+            <h2>Soft&Co : </h2>
+            <img src="Images/soft&co.png" alt="Une photo du nom de l'entreprise et de son logo" width="500">
+            <div>
+                <a>Soft&Co est une PME d'édition de logiciels applicatifs implantée à Vienne. C'est une SASU (Société par actions simplifiée à associé unique) qui a pour clients principaux des compagnies de transports de marchandises comme AirBus.</a>
+            </div>
+            <div>
+                <p>Les personnes composant l'entreprise ont pour métiers :</p>
+                <p>- 2 Développeurs.</p>
+                <p>- Responsable Informatique.</p>
+                <p>- Assistant Technique.</p>
+                <p>- Assistant Commercial.</p>
+                <p>- Directeur Technique.</p>
+                <p>- Chef Produit.</p>
+            </div>
+            <div>
+                <a>Leurs parcours d'études supérieurs sont, pour la plupart, composés d'un BTS SIO (SLAM) ou d'un BTS SNIR (Systèmes Numériques Informatique et Réseau), puis, d'une Licence Concepteur Développeur Full Stack et, enfin, d'un Master expert développement Web.</a>
+            </div>
+            <div>
+                <a>Cette entreprise utilise WinDev, Visual Studio Code, Docker, Api Dog et PostgreSQL pour créer des solutions propriétaires. Ils utilisent majoritairement des ordinateurs portables Windows 11. </a>
+            </div>
+            <div>
+                <a>Ils possèdent deux versions de leur logiciel : une en client lourd WinDev qui nécessite d'être installé sur le poste/serveur qui l'utilise et une autre en client léger Web SAAS qui peut-être utilisé sur n'importe quel navigateur web.</a>
+            </div>
+            <div>
+                <a>Ils gèrent leurs projets grâce GitHub et Jira et ils utilisent la convention de nommage CamelCase, ils font des tests des fonctions avant le Commit et un rangement organisé des fichiers et respectent la RGPD et les règlementations des différents modes de transports.</a>
+            </div>
+            <h2>Qu'est ce que j'ai appris de cette expérience ? : </h2>
+            <div>
+                <a>Durant ce stage, en plus des compétences techniques que j'ai acquéri, j'ai également appris à m'intégrer dans le milieu professionel et présenter, à l'oral, mes travaux.</a>
+            </div>
+        </div>
+        <h2>Quelques photos des locaux : </h2>
+        <img src="Images/photo1.jpg" alt="Première photo des locaux de l'entreprise" width="500">
+        <br>
+        <img src="Images/photo2.jpg" alt="Deuxième photo des locaux de l'entreprise" width="500">
+        <br>
+        <img src="Images/photo3.jpg" alt="Troisième photo des locaux de l'entreprise" width="500">
+    </body>
+</html>

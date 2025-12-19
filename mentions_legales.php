@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Portfolio - Mentions Légales</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <header>
+            <?php include_once 'header.inc.php'; ?>
+        </header>
+        <h1>Mentions Légales :</h1>
+        <div id="conteneur01">
+            <div>
+                <a>Editeur : Tristan Pupier</a>
+            </div>
+            <div>
+                <a>Hébergeur : Tristan Pupier</a>
+            </div>
+            <div>
+                <a>Directeur de publication : Tristan Pupier</a>
+            </div>
+            <div>
+                <a>Conditions d'utilisation : En accédant au site, l’utilisateur reconnaît avoir pris connaissance des présentes CGU et les accepter sans réserve. Si vous n’acceptez pas ces conditions, veuillez ne pas utiliser le site.</a>
+                <a>L’utilisateur s’engage à : Ne pas utiliser le site à des fins illégales ou frauduleuses, Ne pas perturber le bon fonctionnement du site et Respecter les droits de propriété intellectuelle liés au contenu du site.</a>
+                <a>Tous les contenus présents sur le site (textes, images, logos, vidéos, etc.) sont protégés par le droit d’auteur. Toute reproduction ou utilisation non autorisée est interdite.</a>
+                <a>Le site se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés des changements via le site ou par email. Les présentes CGU sont régies par le droit français.</a>
+            </div>
+        </div>
+    </body>
+</html>
