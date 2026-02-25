@@ -1,13 +1,13 @@
 <html>
     <head>
-        <title>Portfolio - Accueil</title>
+        <title>Portfolio - Projets</title>
         <meta charset="UTF-8">
         <link href="style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
         <header>
             <nav>
-                <ul style="list-style: none; display: flex; gap: 20px; padding: 0;"> 
+                <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="stages.html">Stages</a></li>
                     <li><a href="projets.html">Projets</a></li>
@@ -17,117 +17,105 @@
                 </ul>
             </nav>
         </header>
+
         <h1>Présentation de mes Projets</h1>
-        <div id="conteneur01">
-            <h2>Projet du Stage de Première Année : </h2>
-            <div>
-                <a>Durant mon stage de Première Année, on m'a donné 4 semaines pour ajouter une section Signataire pour gérer les signatures sur les documents PDF générés sur la version Web SAAS de leur logiciel.</a>
+
+        <!-- PROJET 1 -->
+        <section class="project-section">
+            <h2>Projet du Stage de Première Année</h2>
+
+            <p>
+                Durant mon stage de Première Année, on m'a donné 4 semaines pour ajouter une section Signataire permettant de gérer les signatures sur les documents PDF générés sur la version Web SAAS du logiciel.
+            </p>
+
+            <p>
+                J’ai participé aux réunions d’ouverture et de fermeture de sprint avec mon maître de stage, le scrum master et le directeur commercial. Le livrable était le code validant le ticket attribué, fusionné sur GitHub.
+            </p>
+
+            <p>
+                J’ai commencé par réaliser un schéma de l’onglet Signataire, puis j’ai participé à la création des SPECS. Ensuite, j’ai développé le front-end. Voici quelques images :
+            </p>
+
+            <div class="project-gallery">
+                <img src="Images/Front1.png" alt="Liste des signataires">
+                <img src="Images/Front2.png" alt="Création d'un signataire">
+                <img src="Images/Front3.png" alt="Modification d'un signataire">
             </div>
-            <div>
-                <a>Pendant ces 4 semaines, j'ai participé aux différentes réunions d'ouverture et de fermetures de sprint où les tickets distribués/validés. Les différents intervenants étaient mon maître de stage, le scrum master et le directeur commercial. Le Livrable était le code qui permettait de régler le ticket attribué et il était envoyé et fusionné sur Github.</a>
+
+            <p>
+                Avec mes collègues, nous avons créé la table Signataire dans la base de données via Prisma, ce qui m’a permis de développer la partie Back (API + BDD).
+            </p>
+
+            <p>
+                Enfin, j’ai intégré les signataires aux autres modules pour permettre l’ajout automatique des signatures dans les PDF générés.
+            </p>
+
+            <div class="project-gallery">
+                <img src="Images/pdf.png" alt="Signature intégrée dans un PDF">
             </div>
-            <div>
-                <a>J'ai d'abord commencé par faire un schéma de ce à quoi l'onglet Signataire ressemblerai. Ensuite, avec l'aide de mon maître de stage, j'ai participé et finalisé la création des SPECS. Ensuite, j'ai codé le front pour faire le faire apparaître sur le logiciel. Voici quelques images :</a>
+        </section>
+
+        <!-- PROJET 2 -->
+        <section class="project-section">
+            <h2>Projet du Stage de Deuxième Année</h2>
+
+            <p>
+                Durant mon stage de Deuxième Année, j’ai travaillé sur un nouveau logiciel en début de développement. J’ai eu 6 semaines pour créer les modules Contacts, Assistances, Formations et Contrats.
+            </p>
+
+            <p>
+                Comme en première année, j’ai participé aux réunions de sprint et livré du code validé puis fusionné sur GitHub.
+            </p>
+
+            <p>
+                Je me suis appuyé sur une maquette pour créer le front-end. Voici quelques images :
+            </p>
+
+            <div class="project-gallery">
+                <img src="Images/Contact.png" alt="Module Contact">
+                <img src="Images/ContactCréation.png" alt="Création Contact">
+                <img src="Images/Assistance.png" alt="Module Assistance">
+                <img src="Images/AssistanceCréation.png" alt="Création Assistance">
+                <img src="Images/Formation.png" alt="Module Formation">
+                <img src="Images/FormationCréation.png" alt="Création Formation">
+                <img src="Images/Contrat.png" alt="Module Contrat">
+                <img src="Images/ContratCréation.png" alt="Création Contrat">
             </div>
-            <div>
-                <img src="Images/Front1.png" alt="Première photo du Front : la liste des Signataires existants" width="500">
+
+            <p>
+                J’ai ensuite relié ces modules à la base de données existante et créé les routes API nécessaires (CRUD).
+            </p>
+
+            <p>
+                Pour finir, j’ai intégré ces modules au module Entreprise afin de pouvoir les associer à une entreprise.
+            </p>
+        </section>
+
+        <!-- AUTRES PROJETS -->
+        <section class="project-section">
+            <h2>Autres Projets</h2>
+
+            <h3>Multiburo</h3>
+            <p>
+                Projet visant à consulter et réserver des ressources d’un bâtiment fictif. Développé en PHP avec une base de données HeidiSQL.
+            </p>
+
+            <div class="project-gallery">
+                <img src="Images/multiburo1.png" alt="Site Multiburo">
+                <img src="Images/multiburo2.png" alt="Diagramme UML Multiburo">
             </div>
-            <div>
-                <img src="Images/Front2.png" alt="Deuxième photo du Front : la création d'un signataire" width="500">
+
+            <h3>Scrabble</h3>
+            <p>
+                À partir d’une version fonctionnelle en C#, j’ai ajouté le mode 2 joueurs, la sauvegarde de partie, l’historique, une API dictionnaire et une base HeidiSQL.
+            </p>
+
+            <div class="project-gallery">
+                <img src="Images/scrabble1.png" alt="Accueil Scrabble">
+                <img src="Images/scrabble2.png" alt="Partie Scrabble">
+                <img src="Images/scrabble3.png" alt="UML Scrabble">
             </div>
-            <div>
-                <img src="Images/Front3.png" alt="Troisième photo du Front : la modification d'un signataire" width="500">
-            </div>
-            <div>
-                <a>Ensuite, avec l'aide de mes collègues, nous avons créé une table Signataire dans la base de donnée avec Prisma. Cela m'a permis de m'attaquer à la partie Back de mon projet (Base de donnée & API) afin de pouvoir créer, modifier et dupliquer mes signataires.</a>
-            </div>
-            <div>
-                <a>Pour finir, j'ai intégré les signataires aux autres parties du logiciel pour pouvoir intégrer les signatures aux documents PDF que le logiciel créé.</a>
-            </div>
-            <div>
-                <img src="Images/pdf.png" alt="La signature et le nom du signataire ajoutée au PDF généré" width="500">
-            </div>
-        </div>
-        <div id="conteneur02">
-            <h2>Projet du Stage de Deuxième Année : </h2>
-            <div>
-                <a>
-                    Durant mon stage de Deuxième Année, on m'a assigné à un nouveau logiciel dont le développement venait de commencer.
-                    J'ai eu 6 semaines pour ajouter les modules des Contacts, des Assistances, des Formations et des Contrats sur ce nouveau logiciel pour permettre à mon collègue de continuer le développement plus facilement.
-                </a>
-            </div> 
-            <br>
-            <div>
-                <a>
-                    Pendant 6 semaines, j'ai, une nouvelle fois, participé aux différentes réunions d'ouverture et de fermetures de sprint. 
-                    Le Livrable était encore une fois du code qui permettait de régler le ticket attribué et il était envoyé et fusionné sur Github après vérification.
-                </a>
-            </div>
-            <br>
-            <div>
-                <a>
-                    Je me suis appuyé sur la maquette de mon collègue pour créer le front et je l'ai fait apparaître sur le logiciel. Voici quelques images :
-                </a>
-            </div>
-            <br>
-            <div>
-                <img src="Images/Contact.png" alt="Image du module Contact" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/ContactCréation.png" alt="Image de la modale Contact" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/Assistance.png" alt="Image du module Assistance" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/AssistanceCréation.png" alt="Image de la modale Assistance" width="500">
-            </div>
-            <br>
-            <div>
-                <img src="Images/Formation.png" alt="Image du module Formation" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/FormationCréation.png" alt="Image de la modale Formation" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/Contrat.png" alt="Image du module Contrat" width="500"> 
-            </div>
-            <br>
-            <div>
-                <img src="Images/ContratCréation.png" alt="Image de la modale Contrat" width="500">
-            </div>
-            <br>
-            <div>
-                <a>
-                    Ensuite, j'ai lié mes modules à la base de données existante tout en créant les routes API pour pouvoir communiquer avec le backend (Récupérer, Créer, Modifier et Supprimer).
-                </a>
-            </div>
-            <br>
-            <div>
-                <a>
-                    Pour finir, j'ai intégré mes modules au module entreprise du logiciel pour permettre lier les modules à une entreprise.
-                </a>
-            </div>
-        </div>
-        <div id="conteneur03">
-            <h2>Autres Projets : </h2>
-            <h3>Multiburo : </h3>
-            <a>Le but de ce projet était de pouvoir voir les ressources d'un bâtiment fictif pour un jour précis puis de pouvoir en réserver une. "From Scratch", j'ai créé un site en PHP et une base de données HeidiSQL.</a>
-            <img src="Images/multiburo1.png" alt="Image du site Multiburo" width="500">
-            <br>
-            <img src="Images/multiburo2.png" alt="Image du diagramme de classe UML Multiburo" width="500">
-            <h3>Scrabble : </h3>
-            <a>À partir d'une version fonctionnelle en C# du jeu du Scrabble, je l'ai améliorée pour pouvoir jouer à deux joueurs, enregistrer une partie et voir l'historique des parties. J'utilise une API Dictionnaire pour pouvoir vérifier les mots rentrés durant la partie ainsi qu'une base de données HeidiSQL pour stocker l'historique des parties.</a>
-            <img src="Images/scrabble1.png" alt="Image d'accueil de Scrabble" width="500">
-            <br>
-            <img src="Images/scrabble2.png" alt="Image de la partie de Scrabble" width="500">
-            <br>
-            <img src="Images/scrabble3.png" alt="Image du diagramme de classe UML Scrabble" width="300">
-        </div>
+        </section>
+
     </body>
 </html>

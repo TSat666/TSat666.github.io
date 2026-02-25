@@ -7,7 +7,7 @@
     <body>
         <header>
             <nav>
-                <ul style="list-style: none; display: flex; gap: 20px; padding: 0;"> 
+                <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="stages.html">Stages</a></li>
                     <li><a href="projets.html">Projets</a></li>
@@ -17,49 +17,75 @@
                 </ul>
             </nav>
         </header>
+
         <h1>Présentation de l'entreprise Soft&Co</h1>
-        <div id="conteneur01">
-            <h2>L'entreprise : </h2>
-            <h2>Soft&Co : </h2>
-            <img src="Images/soft&co.png" alt="Une photo du nom de l'entreprise et de son logo" width="500">
-            <div>
-                <a>
-                    Soft&Co est une PME d'édition de logiciels applicatifs implantée à Vienne. 
-                    C'est une SASU (Société par actions simplifiée à associé unique) qui a pour clients principaux des compagnies de transports de marchandises comme AirBus.
-                    C'est dans cette entreprise que j'ai effectué mes deux stages de BTS.
-                </a>
+
+        <section class="stage-section">
+            <h2>L'entreprise</h2>
+
+            <h3>Soft&Co</h3>
+
+            <div class="stage-logo">
+                <img src="Images/soft&co.png" alt="Logo de Soft&Co">
             </div>
-            <div>
-                <p>Les personnes composant l'entreprise ont pour métiers :</p>
-                <p>- 2 Développeurs.</p>
-                <p>- Responsable Informatique.</p>
-                <p>- Assistant Technique.</p>
-                <p>- Assistant Commercial.</p>
-                <p>- Directeur Technique.</p>
-                <p>- Chef Produit.</p>
-            </div>
-            <div>
-                <a>Leurs parcours d'études supérieurs sont, pour la plupart, composés d'un BTS SIO (SLAM) ou d'un BTS SNIR (Systèmes Numériques Informatique et Réseau), puis, d'une Licence Concepteur Développeur Full Stack et, enfin, d'un Master expert développement Web.</a>
-            </div>
-            <div>
-                <a>Cette entreprise utilise WinDev, Visual Studio Code, Docker, Api Dog et PostgreSQL pour créer des solutions propriétaires. Ils utilisent majoritairement des ordinateurs portables Windows 11. </a>
-            </div>
-            <div>
-                <a>Ils possèdent deux versions de leur logiciel : une en client lourd WinDev qui nécessite d'être installé sur le poste/serveur qui l'utilise et une autre en client léger Web SAAS qui peut-être utilisé sur n'importe quel navigateur web.</a>
-            </div>
-            <div>
-                <a>Ils gèrent leurs projets grâce GitHub et Jira et ils utilisent la convention de nommage CamelCase, ils font des tests des fonctions avant le Commit et un rangement organisé des fichiers et respectent la RGPD et les règlementations des différents modes de transports.</a>
-            </div>
-            <h2>Qu'est ce que j'ai appris de cette expérience ? : </h2>
-            <div>
-                <a>Durant ce stage, en plus des compétences techniques que j'ai acquéri, j'ai également appris à m'intégrer dans le milieu professionel et présenter, à l'oral, mes travaux.</a>
-            </div>
+
+            <p>
+                Soft&Co est une PME d'édition de logiciels applicatifs implantée à Vienne. 
+                C'est une SASU qui compte parmi ses clients des compagnies de transport de marchandises comme Airbus.
+                C’est dans cette entreprise que j’ai effectué mes deux stages de BTS SIO.
+            </p>
+
+            <h3>Composition de l'équipe</h3>
+
+            <ul class="team-list">
+                <li>2 Développeurs</li>
+                <li>Responsable Informatique</li>
+                <li>Assistant Technique</li>
+                <li>Assistant Commercial</li>
+                <li>Directeur Technique</li>
+                <li>Chef Produit</li>
+            </ul>
+
+            <h3>Parcours des employés</h3>
+
+            <p>
+                La plupart des employés ont suivi un BTS SIO (SLAM) ou un BTS SNIR, puis une Licence Concepteur Développeur Full Stack, et enfin un Master Expert Développement Web.
+            </p>
+
+            <h3>Technologies utilisées</h3>
+
+            <p>
+                L’entreprise utilise WinDev, Visual Studio Code, Docker, ApiDog et PostgreSQL pour développer ses solutions.  
+                Les postes sont majoritairement équipés de Windows 11.
+            </p>
+
+            <p>
+                Soft&Co propose deux versions de son logiciel :  
+                • un client lourd WinDev installé sur poste ou serveur  
+                • un client léger Web SAAS accessible via navigateur
+            </p>
+
+            <h3>Organisation et méthodes</h3>
+
+            <p>
+                Les projets sont gérés via GitHub et Jira.  
+                L’entreprise utilise la convention CamelCase, effectue des tests avant chaque commit, organise soigneusement ses fichiers et respecte la RGPD ainsi que les réglementations du transport.
+            </p>
+
+            <h2>Ce que j'ai appris</h2>
+
+            <p>
+                En plus des compétences techniques acquises, j’ai appris à m’intégrer dans un environnement professionnel, à collaborer en équipe et à présenter mes travaux à l’oral.
+            </p>
+        </section>
+
+        <h2 class="photo-title">Quelques photos des locaux</h2>
+
+        <div class="stage-gallery">
+            <img src="Images/photo1.jpg" alt="Locaux Soft&Co 1">
+            <img src="Images/photo2.jpg" alt="Locaux Soft&Co 2">
+            <img src="Images/photo3.jpg" alt="Locaux Soft&Co 3">
         </div>
-        <h2>Quelques photos des locaux : </h2>
-        <img src="Images/photo1.jpg" alt="Première photo des locaux de l'entreprise" width="500">
-        <br>
-        <img src="Images/photo2.jpg" alt="Deuxième photo des locaux de l'entreprise" width="500">
-        <br>
-        <img src="Images/photo3.jpg" alt="Troisième photo des locaux de l'entreprise" width="500">
+
     </body>
 </html>
