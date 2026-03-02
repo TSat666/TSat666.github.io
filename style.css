@@ -258,6 +258,13 @@ footer {
     margin: 20px 0;
 }
 
+.project-gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
 .project-gallery img {
     width: 100%;
     border-radius: 10px;
