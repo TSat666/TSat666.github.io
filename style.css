@@ -276,6 +276,20 @@ footer {
     transform: scale(1.05);
 }
 
+.pdf-gallery {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.pdf-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 /* ----------------------------- */
 /*          PAGE STAGES          */
 /* ----------------------------- */
