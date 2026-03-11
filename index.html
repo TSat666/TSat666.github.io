@@ -16,47 +16,119 @@
                 </ul>
             </nav>
         </header>
-        <h1>Bienvenue sur mon Portfolio :</h1>
+        <h1>Bienvenue sur mon Portfolio</h1>
         <div id="presentation">
-            <div>
+            <div class="titre-nom">
                 <h2>Tristan Pupier</h2>
             </div>
-            <img src="Images/me.jpg" alt="Une photo de Moi">
-            <h3>Qui suis-je ?</h3>
-            <p>Bonjour et bienvenue sur mon Portfolio de mes deux années de BTS SIO (Services Informatiques aux Organisations) en option SLAM (Solutions Logicielles et Applications Métiers).</p>
-            <p>Je suis un étudiant de 20 ans au Lycée Ella Fitzgerald à Saint-Romain-En-Gal qui a obtenu un baccalauréat général options Mathématiques et Numériques Sciences de l'Informatique (NSI).</p>
-            <p>J'ai fait mes deux stages (Un en première année et un autre en deuxième année) de 6 semaines dans une entreprise se nommant SOFT&CO et se trouvant à Vienne.</p>
-            <p>Depuis le plus loin que je puisse me souvenir, j'ai toujours aimé l'informatique ainsi que la logique qui en suit et je voulais toujours en apprendre plus dans ce domaine. C'est pour ça que j'ai décidé de faire ce BTS et cette option.</p>
-            <p>Je vous présenterai dans une autre l'entreprise où j'ai fait mes deux <a href="stages.html">stages</a> et les <a href="projets.html">projets</a> que j'ai effectué durant mon stage ainsi que pendant mes deux années de BTS.</p>
-            <p>Après ce BTS, je souhaite continuer mes études pour devenir Développeur Full-Stack.</p>
+            <img src="Images/me.jpg" alt="Une photo de moi" class="photo-profil">
+            <h3>Qui suis‑je ?</h3>
+            <p>
+                Bonjour et bienvenue sur mon Portfolio retraçant mes deux années de 
+                <strong>BTS SIO</strong> (Services Informatiques aux Organisations) en option 
+                <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers).
+            </p>
+            <p>
+                Je suis un étudiant de <strong>20 ans</strong> au 
+                <strong>Lycée Ella Fitzgerald</strong> à Saint‑Romain‑En‑Gal. 
+                J’ai obtenu un <strong>baccalauréat général</strong> avec les spécialités 
+                <strong>Mathématiques</strong> et <strong>Numérique et Sciences Informatiques (NSI)</strong>.
+            </p>
+            <p>
+                J’ai effectué mes deux stages de <strong>6 semaines</strong> dans l’entreprise 
+                <strong>SOFT&CO</strong> située à Vienne.
+            </p>
+            <p>
+                Depuis toujours, je suis passionné par <strong>l’informatique</strong>, la 
+                <strong>logique</strong> et le développement. Cette passion m’a naturellement conduit 
+                vers ce BTS et l’option SLAM.
+            </p>
+            <p>
+                Vous pourrez découvrir l’entreprise où j’ai réalisé mes deux 
+                <a href="stages.html"><strong>stages</strong></a> ainsi que les 
+                <a href="projets.html"><strong>projets</strong></a> menés durant ces stages 
+                et au cours de mes deux années de formation.
+            </p>
+            <p>
+                Après ce BTS, je souhaite poursuivre mes études pour devenir 
+                <strong>Développeur Full‑Stack</strong>.
+            </p>
+        </div>
         </div>
         <div id="competences">
             <h2>Mes Compétences</h2>
-            <div class="grid">
-                <img src="Images/html.png" alt="HTML">
-                <img src="Images/csharp.jpg" alt="CSharp">
-                <img src="Images/php.jpg" alt="PHP">
-                <img src="Images/sql.jpg" alt="SQL">
-                <img src="Images/typescript.jpg" alt="TypeScript">
-                <img src="Images/visual_studio.jpg" alt="Visual Studio">
-                <img src="Images/vs_code.jpg" alt="VS Code">
-                <img src="Images/postman.jpg" alt="Postman">
-                <img src="Images/linux_ubuntu.jpg" alt="Linux Ubuntu">
-                <img src="Images/nestjs.jpg" alt="NestJS">
-                <img src="Images/next_js.jpg" alt="Next.js">
-                <img src="Images/react.jpg" alt="React">
-                <img src="Images/androidStudio.png" alt="Android Studio">
-                <img src="Images/kotlin.png" alt="Kotlin">
+            <div class="competence-container">
+                <button class="arrow left" onclick="changeCategory(-1)">&#10094;</button>
+                <div class="competence-category active">
+                    <h3>Langages de programmation</h3>
+                    <div class="grid">
+                        <img src="Images/html.png" alt="HTML">
+                        <img src="Images/php.jpg" alt="PHP">
+                        <img src="Images/csharp.jpg" alt="CSharp">
+                        <img src="Images/typescript.jpg" alt="TypeScript">
+                        <img src="Images/kotlin.png" alt="Kotlin">
+                    </div>
+                </div>
+                <div class="competence-category">
+                    <h3>Frameworks</h3>
+                    <div class="grid">
+                        <img src="Images/react.jpg" alt="React">
+                        <img src="Images/next_js.jpg" alt="Next.js">
+                        <img src="Images/nestjs.jpg" alt="NestJS">
+                    </div>
+                </div>
+                <div class="competence-category">
+                    <h3>Base de données</h3>
+                    <div class="grid">
+                        <img src="Images/heidisql.png" alt="HeidiSQL">
+                        <img src="Images/postgresql.png" alt="PostgreSQL">
+                        <img src="Images/sqlite.png" alt="SQLite">
+                    </div>
+                </div>
+                <div class="competence-category">
+                    <h3>Outils</h3>
+                    <div class="grid">
+                        <img src="Images/visual_studio.jpg" alt="Visual Studio">
+                        <img src="Images/vs_code.jpg" alt="VS Code">
+                        <img src="Images/postman.jpg" alt="Postman">
+                        <img src="Images/androidStudio.png" alt="Android Studio">
+                    </div>
+                </div>
+                <div class="competence-category">
+                    <h3>OS</h3>
+                    <div class="grid">
+                        <img src="Images/linux_ubuntu.jpg" alt="Linux Ubuntu">
+                    </div>
+                </div>
+                <button class="arrow right" onclick="changeCategory(1)">&#10095;</button>
             </div>
         </div>
         <div id="veille">
             <h2>Sujets de Veille Informatique :</h2>
-            <p>Je m'informe souvent sur les dernières mises à jours des différents systèmes d'exploitation comme les différentes versions de Linux ou Windows.</p>
-            <p>Je m'informe également sur les dernières failles de sécurité et sur les dernières fuites de données.</p>
+            <p>
+                Je m'informe souvent sur les dernières <strong>mises à jour</strong> des différents 
+                <strong>systèmes d'exploitation</strong> comme les différentes versions de 
+                <strong>Linux</strong> ou <strong>Windows</strong>.
+            </p>
+            <p>
+                Je m'informe également sur les dernières <strong>failles de sécurité</strong> et sur les 
+                dernières <strong>fuites de données</strong>.
+            </p>
             <h2>Outils de Veille Informatique :</h2>
-            <img src="Images/flipboard.png" alt="FlipBoard" width="300">
-            <br>
-            <img src="Images/feedly.png" alt="Feedly" width="300">
+            <div class="veille-images">
+                <img src="Images/flipboard.png" alt="FlipBoard" width="300">
+                <img src="Images/feedly.png" alt="Feedly" width="300">
+            </div>
         </div>
+        <script>
+            let index = 0;
+            const categories = document.querySelectorAll(".competence-category");
+
+            function changeCategory(direction) {
+                categories[index].classList.remove("active");
+                index = (index + direction + categories.length) % categories.length;
+                categories[index].classList.add("active");
+            }
+        </script>
     </body>
 </html>
