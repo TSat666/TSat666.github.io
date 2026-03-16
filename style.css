@@ -467,6 +467,12 @@ footer {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+.stage-section a {
+    color: #0077ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .stage-section h2 {
     margin-bottom: 15px;
     color: #1e1e2f;
