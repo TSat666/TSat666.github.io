@@ -9,11 +9,18 @@
     font-family: "Segoe UI", Roboto, sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    margin-top: 100px;
     background: #f5f7fa;
     color: #222;
     line-height: 1.6;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* -------------------------------------- */
@@ -29,10 +36,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-body {
-    margin-top: 100px;
 }
 
 nav ul {
@@ -269,7 +272,50 @@ footer {
     padding: 20px;
     background: #1e1e2f;
     color: white;
-    margin-top: 40px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.footer-section {
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    color: #4da3ff;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #4da3ff;
+}
+
+footer p {
+    font-size: 0.95rem;
+    color: #ccc;
 }
 
 /* ----------------------------- */
