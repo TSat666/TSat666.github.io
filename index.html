@@ -74,55 +74,120 @@
             <h2>Mes Compétences</h2>
 
             <div class="competence-container">
-                <button class="arrow left" aria-label="Catégorie précédente" onclick="changeCategory(-1)">&#10094;</button>
+
+                <button class="arrow left" onclick="changeCategory(-1)">&#10094;</button>
+
+                <div class="competence-wrapper">
 
                 <div class="competence-category active">
                     <h3>Langages de programmation</h3>
                     <div class="grid">
-                        <img src="Images/html.png" alt="HTML" loading="lazy">
-                        <img src="Images/php.jpg" alt="PHP" loading="lazy">
-                        <img src="Images/csharp.jpg" alt="CSharp" loading="lazy">
-                        <img src="Images/typescript.jpg" alt="TypeScript" loading="lazy">
-                        <img src="Images/kotlin.png" alt="Kotlin" loading="lazy">
+                        <a href="#img-html"><img src="Images/html.png" alt="HTML"></a>
+                        <div class="lightbox" id="img-html">
+                            <a href="#c"><img src="Images/html.png"></a>
+                        </div>
+
+                        <a href="#img-php"><img src="Images/php.jpg" alt="PHP"></a>
+                        <div class="lightbox" id="img-php">
+                            <a href="#c"><img src="Images/php.jpg"></a>
+                        </div>
+
+                        <a href="#img-csharp"><img src="Images/csharp.jpg" alt="CSharp"></a>
+                        <div class="lightbox" id="img-csharp">
+                            <a href="#c"><img src="Images/csharp.jpg"></a>
+                        </div>
+
+                        <a href="#img-ts"><img src="Images/typescript.jpg" alt="TypeScript"></a>
+                        <div class="lightbox" id="img-ts">
+                            <a href="#c"><img src="Images/typescript.jpg"></a>
+                        </div>
+
+                        <a href="#img-kotlin"><img src="Images/kotlin.png" alt="Kotlin"></a>
+                        <div class="lightbox" id="img-kotlin">
+                            <a href="#c"><img src="Images/kotlin.png"></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="competence-category">
-                    <h3>Frameworks</h3>
-                    <div class="grid">
-                        <img src="Images/react.jpg" alt="React" loading="lazy">
-                        <img src="Images/next_js.jpg" alt="Next.js" loading="lazy">
-                        <img src="Images/nestjs.jpg" alt="NestJS" loading="lazy">
+                    <div class="competence-category">
+                        <h3>Frameworks</h3>
+                        <div class="grid">
+                            <a href="#img-react"><img src="Images/react.jpg" alt="React"></a>
+                            <div class="lightbox" id="img-react">
+                                <a href="#c"><img src="Images/react.jpg"></a>
+                            </div>
+
+                            <a href="#img-next"><img src="Images/next_js.jpg" alt="Next.js"></a>
+                            <div class="lightbox" id="img-next">
+                                <a href="#c"><img src="Images/next_js.jpg"></a>
+                            </div>
+
+                            <a href="#img-nest"><img src="Images/nestjs.jpg" alt="NestJS"></a>
+                            <div class="lightbox" id="img-nest">
+                                <a href="#c"><img src="Images/nestjs.jpg"></a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="competence-category">
+                        <h3>Bases de données</h3>
+                        <div class="grid">
+                            <a href="#img-heidi"><img src="Images/heidisql.png" alt="HeidiSQL"></a>
+                            <div class="lightbox" id="img-heidi">
+                                <a href="#c"><img src="Images/heidisql.png"></a>
+                            </div>
+
+                            <a href="#img-postgres"><img src="Images/postgresql.png" alt="PostgreSQL"></a>
+                            <div class="lightbox" id="img-postgres">
+                                <a href="#c"><img src="Images/postgresql.png"></a>
+                            </div>
+
+                            <a href="#img-sqlite"><img src="Images/sqlite.png" alt="SQLite"></a>
+                            <div class="lightbox" id="img-sqlite">
+                                <a href="#c"><img src="Images/sqlite.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competence-category">
+                        <h3>Outils</h3>
+                        <div class="grid">
+                            <a href="#img-vs"><img src="Images/visual_studio.jpg" alt="Visual Studio"></a>
+                            <div class="lightbox" id="img-vs">
+                                <a href="#c"><img src="Images/visual_studio.jpg"></a>
+                            </div>
+
+                            <a href="#img-vscode"><img src="Images/vs_code.jpg" alt="VS Code"></a>
+                            <div class="lightbox" id="img-vscode">
+                                <a href="#c"><img src="Images/vs_code.jpg"></a>
+                            </div>
+
+                            <a href="#img-postman"><img src="Images/postman.jpg" alt="Postman"></a>
+                            <div class="lightbox" id="img-postman">
+                                <a href="#c"><img src="Images/postman.jpg"></a>
+                            </div>
+
+                            <a href="#img-android"><img src="Images/androidStudio.png" alt="Android Studio"></a>
+                            <div class="lightbox" id="img-android">
+                                <a href="#c"><img src="Images/androidStudio.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competence-category">
+                        <h3>Systèmes d’exploitation</h3>
+                        <div class="grid">
+                            <a href="#img-linux"><img src="Images/linux_ubuntu.jpg" alt="Linux Ubuntu"></a>
+                            <div class="lightbox" id="img-linux">
+                                <a href="#c"><img src="Images/linux_ubuntu.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="competence-category">
-                    <h3>Bases de données</h3>
-                    <div class="grid">
-                        <img src="Images/heidisql.png" alt="HeidiSQL" loading="lazy">
-                        <img src="Images/postgresql.png" alt="PostgreSQL" loading="lazy">
-                        <img src="Images/sqlite.png" alt="SQLite" loading="lazy">
-                    </div>
-                </div>
+                <button class="arrow right" onclick="changeCategory(1)">&#10095;</button>
 
-                <div class="competence-category">
-                    <h3>Outils</h3>
-                    <div class="grid">
-                        <img src="Images/visual_studio.jpg" alt="Visual Studio" loading="lazy">
-                        <img src="Images/vs_code.jpg" alt="VS Code" loading="lazy">
-                        <img src="Images/postman.jpg" alt="Postman" loading="lazy">
-                        <img src="Images/androidStudio.png" alt="Android Studio" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="competence-category">
-                    <h3>Systèmes d’exploitation</h3>
-                    <div class="grid">
-                        <img src="Images/linux_ubuntu.jpg" alt="Linux Ubuntu" loading="lazy">
-                    </div>
-                </div>
-
-                <button class="arrow right" aria-label="Catégorie suivante" onclick="changeCategory(1)">&#10095;</button>
             </div>
         </section>
 
