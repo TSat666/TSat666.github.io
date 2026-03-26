@@ -1,33 +1,54 @@
-<html>
-    <head>
-        <title>Portfolio - Stages</title>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="stages.html">Stages</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="mentions_legales.html">Mentions légales</a></li>
-                </ul>
-            </nav>
-        </header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Stages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation de mes stages réalisés chez Soft&Co dans le cadre du BTS SIO SLAM.">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="stages.html" class="active">Stages</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mentions_legales.html">Mentions légales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
         <h1>Présentation de l'entreprise Soft&Co</h1>
+
         <section class="stage-section">
-            <h2><a href="https://www.softandco.fr/" target="_blank">Soft&Co</a></h2>
+
+            <h2>
+                <a href="https://www.softandco.fr/" target="_blank" rel="noopener noreferrer">
+                    Soft&Co
+                </a>
+            </h2>
+
             <div class="stage-logo">
-                <img src="Images/soft&co.png" alt="Logo de Soft&Co">
+                <img src="Images/soft&co.png" alt="Logo de Soft&Co" loading="lazy">
             </div>
+
             <p>
-                <strong>Soft&Co</strong> est une <strong>PME d’édition de logiciels applicatifs</strong> implantée à Vienne. 
-                C'est une <strong>SASU</strong> qui compte parmi ses clients des compagnies de transport de marchandises comme <strong>Airbus</strong>.
-                C’est dans cette entreprise que j’ai effectué mes deux stages de <strong>BTS SIO</strong> 
-                (le premier de <strong>mai à juin 2025</strong> et le second de <strong>janvier à février 2026</strong>).
+                <strong>Soft&Co</strong> est une <strong>PME d’édition de logiciels applicatifs</strong> située à Vienne.  
+                C’est une <strong>SASU</strong> travaillant notamment avec des acteurs du transport de marchandises tels qu’<strong>Airbus</strong>.  
+                J’y ai réalisé mes deux stages de <strong>BTS SIO option SLAM</strong> :
             </p>
+
+            <ul class="team-list">
+                <li>1er stage : <strong>mai à juin 2024</strong></li>
+                <li>2e stage : <strong>janvier à février 2025</strong></li>
+            </ul>
+
             <h3>Composition de l'équipe</h3>
             <ul class="team-list">
                 <li><strong>2 Développeurs</strong></li>
@@ -37,44 +58,82 @@
                 <li><strong>Directeur Technique</strong></li>
                 <li><strong>Chef Produit</strong></li>
             </ul>
+
             <h3>Méthodologie de l'entreprise</h3>
             <p>
-                Soft&Co s’appuie sur la méthodologie <strong>Agile SCRUM</strong> pour organiser ses projets. 
-                Le travail est découpé en <strong>sprints</strong> de deux semaines, permettant d’avancer par étapes et 
-                d’adapter rapidement les priorités selon les besoins des clients. Chaque sprint commence par une 
-                <strong>planification</strong>, suivie de réunions quotidiennes pour assurer la coordination de l’équipe. 
-                À la fin de chaque cycle, une <strong>revue</strong> et une <strong>rétrospective</strong> permettent 
-                d’améliorer continuellement le processus et la qualité des livrables.
+                Soft&Co utilise la méthodologie <strong>Agile SCRUM</strong>.  
+                Les projets sont découpés en <strong>sprints de deux semaines</strong> comprenant :
             </p>
+
+            <ul class="team-list">
+                <li><strong>Réunion de planification</strong></li>
+                <li><strong>Réunions quotidiennes (daily meetings)</strong></li>
+                <li><strong>Revue de sprint</strong></li>
+                <li><strong>Rétrospective pour améliorer le processus</strong></li>
+            </ul>
+
             <h3>Technologies utilisées</h3>
             <p>
-                L’entreprise utilise <strong>WinDev</strong>, <strong>Visual Studio Code</strong>, <strong>Docker</strong>, 
-                <strong>ApiDog</strong> et <strong>PostgreSQL</strong> pour développer ses solutions.  
-                Les postes sont majoritairement équipés de <strong>Windows 11</strong>.
-                Soft&Co propose deux versions de son logiciel : un <strong>client lourd WinDev</strong> installé sur poste ou serveur  
-                et un <strong>client léger Web SAAS</strong> accessible via navigateur
+                L’entreprise utilise :
             </p>
+
+            <ul class="team-list">
+                <li><strong>WinDev</strong></li>
+                <li><strong>Visual Studio Code</strong></li>
+                <li><strong>Docker</strong></li>
+                <li><strong>ApiDog</strong></li>
+                <li><strong>PostgreSQL</strong></li>
+                <li><strong>Windows 11 sur les postes</strong></li>
+            </ul>
+
+            <p>
+                Soft&Co propose deux versions de son logiciel :
+            </p>
+
+            <ul class="team-list">
+                <li><strong>Client lourd WinDev installé sur poste ou serveur</strong></li>
+                <li><strong>Client léger Web SAAS accessible via navigateur</strong></li>
+            </ul>
+
             <h3>Organisation et méthodes</h3>
             <p>
                 Les projets sont gérés via <strong>GitHub</strong> et <strong>Jira</strong>.  
-                L’entreprise utilise la convention <strong>CamelCase</strong>, effectue des <strong>tests avant chaque commit</strong>, 
-                organise soigneusement ses fichiers et respecte la <strong>RGPD</strong> ainsi que les réglementations du transport.
+                L’entreprise applique :
             </p>
+
+            <ul class="team-list">
+                <li><strong>Convention CamelCase</strong></li>
+                <li><strong>Tests avant chaque commit</strong></li>
+                <li><strong>Organisation stricte des fichiers</strong></li>
+                <li><strong>Respect de la RGPD et des normes du transport</strong></li>
+            </ul>
+
             <h2>Ce que j'ai appris</h2>
             <p>
-                En plus des compétences techniques acquises, j’ai appris à <strong>m’intégrer dans un environnement professionnel</strong>, 
-                à <strong>collaborer en équipe</strong> et à <strong>présenter mes travaux à l’oral</strong>.
+                Au-delà des compétences techniques, j’ai appris à :
             </p>
+
+            <ul class="team-list">
+                <li><strong>m’intégrer dans un environnement professionnel</strong></li>
+                <li><strong>collaborer efficacement en équipe</strong></li>
+                <li><strong>présenter mes travaux à l’oral</strong></li>
+            </ul>
+
         </section>
+
         <h2 class="photo-title">Quelques photos des locaux</h2>
+
         <div class="stage-gallery">
-            <img src="Images/photo1.jpg" alt="Locaux Soft&Co 1">
-            <img src="Images/photo2.jpg" alt="Locaux Soft&Co 2">
-            <img src="Images/photo3.jpg" alt="Locaux Soft&Co 3">
+            <img src="Images/photo1.jpg" alt="Locaux Soft&Co – Salle de travail" loading="lazy">
+            <img src="Images/photo2.jpg" alt="Locaux Soft&Co – Bureau" loading="lazy">
+            <img src="Images/photo3.jpg" alt="Locaux Soft&Co – Espace de réunion" loading="lazy">
         </div>
-    </body>
+
+    </main>
+
     <footer>
         <div class="footer-container">
+
             <div class="footer-section">
                 <h4>Navigation</h4>
                 <ul>
@@ -93,10 +152,15 @@
 
             <div class="footer-section">
                 <h4>Informations</h4>
-                <li><a href="mentions_legales.html">Mentions légales</a></li>
+                <ul>
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                </ul>
                 <p>Portfolio réalisé dans le cadre du BTS SIO — SLAM</p>
                 <p>© 2024 Tristan Pupier</p>
             </div>
+
         </div>
     </footer>
+
+</body>
 </html>

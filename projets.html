@@ -1,89 +1,113 @@
-<html>
-    <head>
-        <title>Portfolio - Projets</title>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="stages.html">Stages</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="mentions_legales.html">Mentions légales</a></li>
-                </ul>
-            </nav>
-        </header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Projets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation de mes projets réalisés en BTS SIO SLAM : stages, développement web, mobile et logiciels.">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mentions_legales.html">Mentions légales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
         <h1>Présentation de mes Projets</h1>
+
         <section class="project-section">
             <h2>Projet du Stage de Première Année</h2>
+
             <h3>Objectif du projet</h3>
             <p>
-                Durant mon stage de Première Année, on m'a donné 4 semaines pour ajouter une section <strong>Signataire</strong> permettant de gérer les signatures sur les 
-                documents <strong>PDF</strong> générés sur la version <strong>Web SAAS</strong> du logiciel nommé <strong>DMDLog</strong>.
+                Durant mon stage de Première Année, j’ai eu 4 semaines pour ajouter une section <strong>Signataire</strong> permettant de gérer les signatures sur les documents <strong>PDF</strong> générés sur la version <strong>Web SAAS</strong> du logiciel <strong>DMDLog</strong>.
             </p>
+
             <h3>Présentation du logiciel</h3>
             <p>
-                <strong>DMDLog</strong> est un logiciel <strong>métier</strong> qui permet de traiter, gérer et éditer les documents de transport de <strong>marchandises dangeureuses</strong>.
+                <strong>DMDLog</strong> est un logiciel <strong>métier</strong> destiné à gérer les documents de transport de <strong>marchandises dangereuses</strong>.
             </p>
+
             <h3>Organisation du travail</h3>
             <p>
-                J’ai participé aux réunions d’ouverture et de fermeture de <strong>sprint</strong> avec mon maître de stage, le <strong>scrum master</strong> et le 
-                <strong>directeur commercial</strong>.  
-                Le livrable était le <strong>code validé</strong> du ticket attribué, puis fusionné sur <strong>GitHub</strong>.
+                J’ai participé aux réunions d’ouverture et de fermeture de <strong>sprint</strong> avec mon maître de stage, le <strong>scrum master</strong> et le <strong>directeur commercial</strong>.  
+                Le livrable final était le <strong>code validé</strong> du ticket attribué, puis fusionné sur <strong>GitHub</strong>.
             </p>
+
             <h3>Conception et développement</h3>
             <p>
-                J’ai commencé par réaliser un <strong>schéma</strong> de l’onglet Signataire, puis j’ai participé à la création des <strong>SPECS</strong>.  
+                J’ai commencé par réaliser un <strong>schéma</strong> de l’onglet Signataire, puis participé à la création des <strong>SPECS</strong>.  
                 Ensuite, j’ai développé le <strong>front-end</strong>. Voici quelques images :
             </p>
+
             <div class="project-gallery">
-                <a href="#img-front1"><img src="Images/Front1.png" alt="Liste des signataires"></a>
+                <a href="#img-front1"><img src="Images/Front1.png" alt="Liste des signataires" loading="lazy"></a>
                 <div class="lightbox" id="img-front1">
                     <a href="#"><img src="Images/Front1.png"></a>
                 </div>
-                <a href="#img-front2"><img src="Images/Front2.png" alt="Création d'un signataire"></a>
+
+                <a href="#img-front2"><img src="Images/Front2.png" alt="Création d'un signataire" loading="lazy"></a>
                 <div class="lightbox" id="img-front2">
                     <a href="#"><img src="Images/Front2.png"></a>
                 </div>
-                <a href="#img-front3"><img src="Images/Front3.png" alt="Modification d'un signataire"></a>
+
+                <a href="#img-front3"><img src="Images/Front3.png" alt="Modification d'un signataire" loading="lazy"></a>
                 <div class="lightbox" id="img-front3">
                     <a href="#"><img src="Images/Front3.png"></a>
                 </div>
             </div>
-             <h3>Développement Back-End</h3>
+
+            <h3>Développement Back-End</h3>
             <p>
-                Avec mes collègues, nous avons créé la table <strong>Signataire</strong> dans la base de données via <strong>Prisma</strong>, ce qui m’a permis de développer la partie <strong>Back (API + BDD)</strong>.
+                Avec mes collègues, nous avons créé la table <strong>Signataire</strong> via <strong>Prisma</strong>, ce qui m’a permis de développer la partie <strong>API + Base de données</strong>.
             </p>
+
             <h3>Intégration finale</h3>
             <p>
-                Enfin, j’ai intégré les signataires aux autres modules pour permettre l’ajout automatique des <strong>signatures PDF</strong>.
+                J’ai intégré les signataires aux autres modules pour permettre l’ajout automatique des <strong>signatures PDF</strong>.
             </p>
+
             <div class="pdf-gallery">
-                <img src="Images/pdf.png" alt="Signature PDF">
+                <img src="Images/pdf.png" alt="Signature PDF" loading="lazy">
             </div>
         </section>
+
+        <!-- PROJET 2 -->
         <section class="project-section">
             <h2>Projet du Stage de Deuxième Année</h2>
+
             <h3>Objectif du projet</h3>
             <p>
                 Durant mon stage de Deuxième Année, j’ai travaillé sur un nouveau logiciel en début de développement.  
                 J’ai eu 6 semaines pour créer les modules <strong>Contacts</strong>, <strong>Assistances</strong>, <strong>Formations</strong> et <strong>Contrats</strong>.
             </p>
+
             <h3>Présentation du logiciel</h3>
             <p>
                 <strong>LogCSTMD</strong> est un outil <strong>métier</strong> qui permet de s'intégrer dans les <strong>obligations métiers</strong> d'un <strong>conseiller à la sécurité</strong>.
             </p>
+
             <h3>Organisation du travail</h3>
             <p>
-                Comme en première année, j’ai participé aux réunions de <strong>sprint</strong> et livré du <strong>code validé</strong> puis fusionné sur <strong>GitHub</strong>.
+                Comme en première année, j’ai participé aux réunions de <strong>sprint</strong> et livré du <strong>code validé</strong> fusionné sur <strong>GitHub</strong>.
             </p>
+
             <h3>Développement Front-End</h3>
             <p>
                 Je me suis appuyé sur une <strong>maquette</strong> pour créer le front-end. Voici quelques images :
             </p>
+
             <div class="project-gallery">
                 <a href="#img-contact"><img src="Images/Contact.png" alt="Module Contact"></a>
                 <div class="lightbox" id="img-contact">
@@ -125,22 +149,27 @@
                     <a href="#"><img src="Images/ContratCréation.png"></a>
                 </div>
             </div>
+
             <h3>Développement Back-End</h3>
             <p>
-                J’ai ensuite relié ces modules à la <strong>base de données</strong> existante et créé les routes <strong>API (CRUD)</strong>.
+                J’ai relié ces modules à la <strong>base de données</strong> existante et créé les routes <strong>API (CRUD)</strong>.
             </p>
+
             <h3>Intégration finale</h3>
             <p>
-                Pour finir, j’ai intégré ces modules au module <strong>Entreprise</strong> afin de pouvoir les associer à une entreprise.
+                J’ai intégré ces modules au module <strong>Entreprise</strong> afin de pouvoir les associer à une entreprise.
             </p>
         </section>
+
         <section class="project-section">
             <h2>Autres Projets</h2>
+
             <h3>Multiburo</h3>
             <p>
-                Projet visant à <strong>consulter</strong> et <strong>réserver</strong> des ressources d’un bâtiment fictif.  
-                Développé en <strong>PHP</strong> avec une base de données <strong>HeidiSQL</strong>.
+                Projet permettant de <strong>consulter</strong> et <strong>réserver</strong> des ressources d’un bâtiment fictif.  
+                Développé en <strong>PHP</strong> avec une base <strong>HeidiSQL</strong>.
             </p>
+
             <div class="project-gallery">
                 <a href="#img-multi1"><img src="Images/multiburo1.png" alt="Site Multiburo"></a>
                 <div class="lightbox" id="img-multi1">
@@ -151,10 +180,12 @@
                     <a href="#"><img src="Images/multiburo2.png"></a>
                 </div>
             </div>
+
             <h3>Scrabble</h3>
             <p>
                 À partir d’une version fonctionnelle en <strong>C#</strong>, j’ai ajouté le <strong>mode 2 joueurs</strong>, la <strong>sauvegarde</strong>, l’<strong>historique</strong>, une <strong>API dictionnaire</strong> et une base <strong>HeidiSQL</strong>.
             </p>
+
             <div class="project-gallery">
                 <a href="#img-scr1"><img src="Images/scrabble1.png" alt="Accueil Scrabble"></a>
                 <div class="lightbox" id="img-scr1">
@@ -169,10 +200,12 @@
                     <a href="#"><img src="Images/scrabble3.png"></a>
                 </div>
             </div>
+
             <h3>Gourmetise</h3>
             <p>
                 Projet <strong>from scratch</strong> : avec un camarade, j’ai créé un site web <strong>Vue.js</strong> permettant de s’inscrire à un concours de boulangerie via une <strong>API Symfony</strong> connectée à une base <strong>HeidiSQL</strong>.
             </p>
+
             <div class="project-gallery">
                 <a href="#img-gou1"><img src="Images/gourmetiseInscription.png" alt="Inscription Gourmetise"></a>
                 <div class="lightbox" id="img-gou1">
@@ -183,17 +216,21 @@
                     <a href="#"><img src="Images/gourmetiseParams.png"></a>
                 </div>
             </div>
+
             <p>
                 J’ai également développé une <strong>application mobile</strong> utilisant une base <strong>SQLite</strong>, permettant d’évaluer les boulangeries et d’envoyer les résultats vers la base <strong>HeidiSQL</strong>.
             </p>
+
             <div class="project-gallery2">
                 <img src="Images/gourmetiseApp.png" alt="App Mobile Gourmetise">
 
                 <img src="Images/gourmetiseVote.png" alt="Evaluation Mobile Gourmetise">
             </div>
+
             <p>
                 À la fin du concours, l’administrateur peut générer les <strong>résultats</strong> (top 3 des boulangeries) grâce aux notes envoyées par l’application mobile.
             </p>
+
             <div class="project-gallery">
                 <a href="#img-gou3"><img src="Images/gourmetiseScore.png" alt="Résultats Gourmetise"></a>
                 <div class="lightbox" id="img-gou3">
@@ -201,9 +238,12 @@
                 </div>
             </div>
         </section>
-    </body>
+
+    </main>
+
     <footer>
         <div class="footer-container">
+
             <div class="footer-section">
                 <h4>Navigation</h4>
                 <ul>
@@ -222,10 +262,15 @@
 
             <div class="footer-section">
                 <h4>Informations</h4>
-                <li><a href="mentions_legales.html">Mentions légales</a></li>
+                <ul>
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                </ul>
                 <p>Portfolio réalisé dans le cadre du BTS SIO — SLAM</p>
                 <p>© 2024 Tristan Pupier</p>
             </div>
+
         </div>
     </footer>
+
+</body>
 </html>
